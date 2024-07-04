@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.nav-menu a{
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-bar h2:hover {
+    color: rgb(255, 135, 23);
+}
+
+.nav-menu a:hover {
+    color: rgb(250, 142, 42);
+}
+
+
+/* ========================================= Buttons  */
+.def-btn,
+.send-wrap input {
+    text-decoration: none;
+    display: inline-flex;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    min-height: 43px;
+    min-width: 140px;
+    justify-content: center;
+    outline: none;
+    align-items: center;
+    border-radius: 99px;
+    margin: 0;
+    padding: 0 24px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+}
+
+.def-btn:hover {
+    background-color: darkgoldenrod;
+}
+.send-wrap input:hover{
+    background-color: darkblue;
+}
+.section-title{
+    color: white;
+}
+
+/* ========================================= Form  */
+.input-wrap input,.message-input textarea{
+    width: 100%;
+    height: 56px;
+    padding: 0 24px;
+    font-size: 18px;
+    line-height: 1.5;
+    border-radius: 99px;
+    border: 0;
+    transition: all 0.3s ease-in-out;
+    
+}
+.input-wrap input::placeholder,
+.input-wrap textarea::placeholder{
+    color: #a3a3a3;
+}
+.input-wrap.message-input textarea{
+    padding: 15px 27px;
+    height: 100px;
+    border-radius: 24px;
+}
+/* ========================================================================================Pages === CSS */
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.contact-form .message-input {
+    grid-area: 4 / 1 / 5 / 3;
+}
+
+.contact-form .send-wrap {
+    grid-area: 5 / 1 / 6 / 3;
+}
+
+
+/* =========================================== Section Price  */
+.price-box-wrap{
+    padding: 0 36px;
+    margin: 36px 0 27px 0;
+}
+.price-box {
+    transform: translateY(-36px);
+    margin-bottom: -36px;
+}
+.price-box-wrap .btn-wrap{
+    transform: translateY(27px);
+}
+.price-box-wrap .btn-wrap .def-btn{
+    height: 54px;
+    min-width: 200px;
+    padding: 0 30px;
+    font-size: 18px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 99px;
+    background-color: #363636;
+}
